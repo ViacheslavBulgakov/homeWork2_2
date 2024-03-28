@@ -1,4 +1,4 @@
-import java.util.Objects;
+package hw_22;
 
 public class Griffindor extends Hogwarts {
     private int nobility;
@@ -42,15 +42,15 @@ public class Griffindor extends Hogwarts {
                 " nobility - " + getNobility() + ", honor - " + getHonor() + ", bravery - " + getBravery();
     }
 
-    public static String compare(Griffindor name1, Griffindor name2) {
+    public String compare(Griffindor name1, Griffindor name2) {
         int sum1 = name1.getNobility() + name1.getHonor() + name1.getBravery();
         int sum2 = name2.getNobility() + name2.getHonor() + name2.getBravery();
         if (sum1 > sum2) {
             return name1.getName() + " лучший Гриффиндорец, чем " + name2.getName();
-        } else if (sum1 < sum2){
+        } else if (sum1 < sum2) {
             return name2.getName() + " лучший Гриффиндорец, чем " + name1.getName();
         } else {
-            return  name1.getName() + " и " + name2.getName() + " равны между собой по успеваемости в Гриффиндоре.";
+            return name1.getName() + " и " + name2.getName() + " равны между собой по успеваемости в Гриффиндоре.";
         }
 
     }

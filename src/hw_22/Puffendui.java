@@ -1,4 +1,6 @@
-public class Puffendui extends Hogwarts{
+package hw_22;
+
+public class Puffendui extends Hogwarts {
     private int industriousness;
     private int loyalty;
     private int honesty;
@@ -39,7 +41,7 @@ public class Puffendui extends Hogwarts{
         return super.toString() + ", Pufengui : " + " industriousness - " + getIndustriousness() + ", loyalty - " +
                 getLoyalty() + ", honesty - " + getHonesty();
     }
-    public static String compare(Puffendui name1, Puffendui name2) {
+    public  String compare(Puffendui name1, Puffendui name2) {
         int sum1 = name1.getIndustriousness() + name1.getLoyalty() + name1.getHonesty();
         int sum2 = name2.getIndustriousness() + name2.getLoyalty() + name2.getHonesty();
         if (sum1 > sum2) {

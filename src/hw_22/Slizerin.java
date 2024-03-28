@@ -1,4 +1,6 @@
-public class Slizerin extends Hogwarts{
+package hw_22;
+
+public class Slizerin extends Hogwarts {
     private int cunning;
     private int determination;
     private int ambition;
@@ -57,11 +59,11 @@ public class Slizerin extends Hogwarts{
 
     @Override
     public String toString() {
-        return super.toString() + ", Slizerin : " + " cunning - " + getCunning() + ", determinasion - "
+        return super.toString() + ", hw_22.Slizerin : " + " cunning - " + getCunning() + ", determinasion - "
                 + getDetermination() + ", ambition - " + getAmbition() + ", resourcefulness - " +
                 getResourcefulness() + ", autority - " + getAuthority();
     }
-    public static String compare(Slizerin name1, Slizerin name2) {
+    public  String compare(Slizerin name1, Slizerin name2) {
         int sum1 = name1.getCunning() + name1.getDetermination() + name1.getAmbition() + name1.getResourcefulness() +
                 name1.getAuthority();
         int sum2 = name2.getCunning() + name2.getDetermination() + name2.getAmbition() + name2.getResourcefulness() +

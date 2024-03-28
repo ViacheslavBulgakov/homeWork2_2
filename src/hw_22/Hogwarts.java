@@ -1,4 +1,6 @@
-public class Hogwarts {
+package hw_22;
+
+public abstract class Hogwarts {
 
     private int power;
     private int transgression;
@@ -39,7 +41,7 @@ public class Hogwarts {
         return getName() + ", power - " + getPower() + ", transgresion - " + getTransgression();
     }
 
-    public static String compareCapacity(Hogwarts name1, Hogwarts name2) {
+    public  String compareCapacity(Hogwarts name1, Hogwarts name2) {
         int sum1 = name1.getPower() + name1.getTransgression();
         int sum2 = name2.getPower() + name2.getTransgression();
         if (sum1 > sum2) {

@@ -1,3 +1,10 @@
+package hw_22;
+
+import hw_22.Griffindor;
+import hw_22.Kogtevran;
+import hw_22.Puffendui;
+import hw_22.Slizerin;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -30,14 +37,14 @@ public class Main {
 
         System.out.println();
 
-        System.out.println(Griffindor.compare(griffindor3,griffindor1));
-        System.out.println(Slizerin.compare(slizerin1,slizerin3));
-        System.out.println(Puffendui.compare(puffendui1,puffendui3));
-        System.out.println(Kogtevran.compare(kogtevran3,kogtevran1));
+        System.out.println(griffindor2.compare(griffindor3,griffindor1));
+        System.out.println(slizerin2.compare(slizerin1,slizerin3));
+        System.out.println(puffendui2.compare(puffendui1,puffendui3));
+        System.out.println(kogtevran2.compare(kogtevran3,kogtevran1));
 
         System.out.println();
 
-        System.out.println(Hogwarts.compareCapacity(griffindor2,kogtevran1));
+        System.out.println(puffendui1.compareCapacity(griffindor2,kogtevran1));
 
     }
 }

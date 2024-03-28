@@ -1,3 +1,5 @@
+package hw_22;
+
 public class Kogtevran extends Hogwarts {
     private int mind;
     private int wisdom;
@@ -46,10 +48,10 @@ public class Kogtevran extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() + ", Kogtevran : " + " mind - " + getMind() + ", wisdom - " + getWisdom() +
+        return super.toString() + ", hw_22.Kogtevran : " + " mind - " + getMind() + ", wisdom - " + getWisdom() +
                 ", wit - " + getWit() + ", creativity - " + getCreativity();
     }
-    public static String compare(Kogtevran name1, Kogtevran name2) {
+    public  String compare(Kogtevran name1, Kogtevran name2) {
         int sum1 = name1.getMind() + name1.getWisdom() + name1.getWit() + name1.getCreativity();
         int sum2 = name2.getMind() + name2.getWisdom() + name2.getWit() + name2.getCreativity();
         if (sum1 > sum2) {
